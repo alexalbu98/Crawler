@@ -1,0 +1,5 @@
+n_threads=50
+depth=20
+log_level=3
+root_dir=D:/Download
+delay=100ms

@@ -1,4 +1,4 @@
-package com.mta;
+package mta.main;
 
 public class Main {
 

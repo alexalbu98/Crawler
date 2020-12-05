@@ -4,7 +4,6 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Crawler C = new Crawler();
-        C.readConfigFile();
+        Crawler C = new Crawler(args);
     }
 }

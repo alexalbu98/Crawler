@@ -1,6 +1,6 @@
 package mta.Singletons;
 import java.util.ArrayList;
-import mta.AbstactClasses.Task;
+import mta.AbstractClasses.Task;
 
 /** Queue that stores all the tasks that must be executed by threads. */
 public class TaskQueue {

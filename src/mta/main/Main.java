@@ -1,4 +1,6 @@
-package com.mta;
+package mta.main;
+
+import mta.Classes.Crawler;
 
 import java.io.IOException;
 

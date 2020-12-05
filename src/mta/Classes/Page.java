@@ -1,4 +1,4 @@
-package com.mta;
+package mta.Classes;
 
 public class Page {
     String URL;

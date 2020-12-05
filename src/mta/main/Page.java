@@ -2,10 +2,10 @@ package com.mta;
 
 public class Page {
     String URL;
-    void addURL(String link){
+   public void addURL(String link){
         this.URL=link;
     }
-    String getURL(){
+    public String getURL(){
         return this.URL;
     }
 }

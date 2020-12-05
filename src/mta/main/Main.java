@@ -1,4 +1,9 @@
 package mta.main;
+<<<<<<< HEAD:src/mta/main/Main.java
+=======
+
+import mta.Classes.Crawler;
+>>>>>>> db62977 (Modificare structura):src/com/mta/Main.java
 
 import java.io.IOException;
 

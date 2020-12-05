@@ -10,6 +10,5 @@ public class Main {
 	//System.out.println("Hello world!");
 	Crawler C=new Crawler();
 	C.readConfigFile();
-
     }
 }

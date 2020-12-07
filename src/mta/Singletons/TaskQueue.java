@@ -29,7 +29,8 @@ public class TaskQueue {
         tasks.add(task);
     }
 
-    /** Removes the first task from queue */
+    /** Removes the first task from queue
+     * @returns void*/
     public void removeTask()
     {
         if(tasks.isEmpty())
@@ -37,6 +38,14 @@ public class TaskQueue {
             return;
         }
         tasks.remove(0);
+    }
+    /**
+     *This method returns the first task in the task queue
+     * @return the first task in the list
+     * */
+    public Task getTask()
+    {
+        return tasks.get(0);
     }
 
     public boolean isQueueEmpty()

@@ -4,6 +4,6 @@ public class SitesFileNotSpecifiedException extends Exception {
 
         public SitesFileNotSpecifiedException()
         {
-            super("Site file must be specified using -s.");
+            super("Site file must be specified using -s.\n");
         }
 }

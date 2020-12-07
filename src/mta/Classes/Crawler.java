@@ -8,6 +8,10 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 
 
 public class Crawler {
@@ -21,6 +25,7 @@ public class Crawler {
     private Boolean robots;
     private int delay;
     private int size;
+    private Page AllPages[];
 
     /**Sets the default parameters and check if the user prefers other options*/
     public Crawler(String[] args)
@@ -129,7 +134,24 @@ public class Crawler {
     }
     private void readSitesFile(){
 
-    }
+                File file= new File(site_file);
+                Scanner scnx = new Scanner(file);
+                int i = 0;
+
+
+                while(scnx.hasNextLine()){
+                    String  URL=scnx.nextLine();
+                    Page p = new Page();
+                    p.addURL(URL);
+
+                    AllPages[i]= p;
+                    i++;
+                }
+
+
+        }
+
+
     private void createThreadPool() {
 
     }

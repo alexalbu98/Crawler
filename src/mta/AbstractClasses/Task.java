@@ -1,11 +1,16 @@
 package mta.AbstractClasses;
 import mta.Classes.Page;
 import mta.Interfaces.Crawl;
+<<<<<<< HEAD
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+=======
+import java.net.URL;
+import java.net.URLConnection;
+>>>>>>> Creare clasa abstracta Task
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -49,6 +54,7 @@ public abstract class Task implements Runnable {
      * Gets the content of the site
      * @param writeToFile tells the method if to write the content to a file or not
      * */
+<<<<<<< HEAD
     protected String fetch(boolean writeToFile)
     {
         StringBuilder content = new StringBuilder();
@@ -102,20 +108,48 @@ public abstract class Task implements Runnable {
         }
 
         return content.toString();
+=======
+    protected String fetch()
+    {
+        String content = null;
+        URLConnection connection = null;
+        try {
+            connection =  new URL(page.getURL()).openConnection();
+            Scanner scanner = new Scanner(connection.getInputStream());
+            scanner.useDelimiter("\\Z");
+            content = scanner.next();
+            scanner.close();
+        }catch ( Exception ex ) {
+            ex.printStackTrace();
+        }
+        return content;
+>>>>>>> Creare clasa abstracta Task
     }
 
     /**
      * Gets all the links in the page
      * */
+<<<<<<< HEAD
     protected ArrayList<Page>getLinks(String content) throws MalformedURLException {
         ArrayList<Page>linkList = new ArrayList<>();
         String regex = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
         Pattern p = Pattern.compile(regex);
+=======
+    protected ArrayList<Page>getLinks()
+    {
+        ArrayList<Page>linkList = new ArrayList<>();
+        String content = fetch();
+        String regex = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";        Pattern p = Pattern.compile(regex);
+>>>>>>> Creare clasa abstracta Task
         Matcher m = p.matcher(content);
         while (m.find())
         {
             Page page = new Page();
+<<<<<<< HEAD
             page.addURL(new URL(m.group()));
+=======
+            page.addURL(m.group());
+>>>>>>> Creare clasa abstracta Task
             linkList.add(page);
         }
 

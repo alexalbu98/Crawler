@@ -161,11 +161,7 @@ public class Crawler {
         TaskFactory factory = TaskFactory.getInstance();
         TaskQueue queue = TaskQueue.getInstance();
         Page newPage = new Page();
-<<<<<<< HEAD
         newPage.addURL(new URL("https://mta.ro/wp-content/uploads/2020/04/A-124-Tematica-diploma-ArmAv-2016-2020_vfinal-min.pdf"));
-=======
-        newPage.addURL("https://mta.ro/");
->>>>>>> Creare clasa abstracta Task
         Pages.add(newPage);
         for(Page page : Pages)
         {
@@ -176,10 +172,7 @@ public class Crawler {
                 task.setLogFile(log_file);
                 task.setDelay(delay);
                 task.setCurrentDepth(0);
-<<<<<<< HEAD
                 task.crawlStrategy.setReadRobots(robots);
-=======
->>>>>>> Creare clasa abstracta Task
                 queue.addTask(task);
                 queue.startedTasks++;
             }catch (Exception exp)
@@ -191,14 +184,8 @@ public class Crawler {
         while(!queue.isQueueEmpty() && queue.startedTasks != queue.finishedTasks)
         {
             if(!queue.isQueueEmpty()){
-
-<<<<<<< HEAD
-                queue.getTask().run();
-=======
                 pool.execute(queue.getTask());
->>>>>>> Creare clasa abstracta Task
                 queue.removeTask();
-
             }
         }
 

@@ -7,6 +7,8 @@ import mta.Singletons.TaskFactory;
 import mta.Singletons.TaskQueue;
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -148,9 +150,12 @@ public class Crawler {
      * This method creates a task for each file in file list uses the thread pool to executes them.
      * @returns void
      */
-    public void runCrawler() {
+    public void runCrawler() throws MalformedURLException {
         TaskFactory factory = TaskFactory.getInstance();
         TaskQueue queue = TaskQueue.getInstance();
+        Page newPage = new Page();
+        newPage.addURL(new URL("https://mta.ro/wp-content/uploads/2020/04/A-124-Tematica-diploma-ArmAv-2016-2020_vfinal-min.pdf"));
+        Pages.add(newPage);
         for(Page page : Pages)
         {
             try {
@@ -158,6 +163,9 @@ public class Crawler {
                 task.addPage(page);
                 task.setDownloadDir(root_dir);
                 task.setLogFile(log_file);
+                task.setDelay(delay);
+                task.setCurrentDepth(0);
+                task.crawlStrategy.setReadRobots(robots);
                 queue.addTask(task);
                 queue.startedTasks++;
             }catch (Exception exp)
@@ -168,8 +176,12 @@ public class Crawler {
 
         while(!queue.isQueueEmpty() && queue.startedTasks != queue.finishedTasks)
         {
-            pool.execute(queue.getTask());
-            queue.removeTask();
+            if(!queue.isQueueEmpty()){
+
+                queue.getTask().run();
+                queue.removeTask();
+
+            }
         }
 
 

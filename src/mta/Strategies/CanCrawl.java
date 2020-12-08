@@ -3,7 +3,7 @@ import mta.Interfaces.Crawl;
 import java.util.ArrayList;
 
 public class CanCrawl implements Crawl {
-    private boolean useRobots = false;
+    private boolean useRobots = true;
     private int crawlDelay = 0;
     private ArrayList<String> sitemaps = null;
     private ArrayList<String> disallowedList = null;
@@ -14,10 +14,7 @@ public class CanCrawl implements Crawl {
         disallowedList = new ArrayList<>();
     }
 
-    @Override
-    public boolean canCrawl() {
-        return true;
-    }
+
 
     @Override
     public void getRobotsFile() {
@@ -40,7 +37,12 @@ public class CanCrawl implements Crawl {
     }
 
     @Override
-    public boolean getUseRobots() {
+    public void setReadRobots(boolean state) {
+        useRobots = state;
+    }
+
+    @Override
+    public boolean getReadRobots() {
         return useRobots;
     }
 }

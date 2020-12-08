@@ -1,9 +1,7 @@
 package mta.Singletons;
-import mta.AbstractClasses.Task;
 import mta.Classes.*;
 import mta.Exceptions.TaskTypeNotSupportedException;
-import mta.Strategies.CanCrawl;
-import mta.Strategies.CanNotCrawl;
+
 
 public class TaskFactory {
     static private TaskFactory factory = null;
@@ -18,35 +16,26 @@ public class TaskFactory {
         return factory;
     }
 
-    public Task makeTask(String type) throws TaskTypeNotSupportedException {
-        switch (type) {
-            case "crawl" -> {
-                CrawlTask crawlTask = new CrawlTask();
-                crawlTask.setCrawlStrategy(new CanCrawl());
-                return crawlTask;
-            }
-            case "sitemap" -> {
-                SitemapTask sitemapTask = new SitemapTask();
-                sitemapTask.setCrawlStrategy(new CanNotCrawl());
-                return sitemapTask;
-            }
-            case "filter_type" -> {
-                FilterTask filterTask = new FilterTask();
-                filterTask.setCrawlStrategy(new CanNotCrawl());
-                return filterTask;
-            }
-            case "filter_size" -> {
-                LimitDimensionTask dimensionTask = new LimitDimensionTask();
-                dimensionTask.setCrawlStrategy(new CanNotCrawl());
-                return dimensionTask;
-            }
-            case "search" -> {
-                SearchWordsTask searchWordsTask = new SearchWordsTask();
-                searchWordsTask.setCrawlStrategy(new CanNotCrawl());
-                return searchWordsTask;
-            }
-            default -> throw new TaskTypeNotSupportedException();
-        }
+    public Runnable makeCrawlTask()
+    {
+        return new CrawlTask();
+    }
+
+    public Runnable makeFilterTask()
+    {
+        return new FilterTask();
+    }
+    public Runnable makeLimitDimensionTask()
+    {
+        return new LimitDimensionTask();
+    }
+    public Runnable makeSearchWordsTask()
+    {
+        return new SearchWordsTask();
+    }
+    public Runnable makeSitemapTask()
+    {
+        return new SitemapTask();
     }
 
 }

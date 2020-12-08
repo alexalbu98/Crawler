@@ -1,8 +1,6 @@
 package mta.Classes;
 
-import mta.AbstractClasses.Task;
-
-public class LimitDimensionTask extends Task {
+public class LimitDimensionTask implements Runnable {
     @Override
     public void run() {
 

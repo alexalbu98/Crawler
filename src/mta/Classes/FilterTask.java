@@ -1,8 +1,6 @@
 package mta.Classes;
 
-import mta.AbstractClasses.Task;
-
-public class FilterTask extends Task {
+public class FilterTask implements Runnable {
     @Override
     public void run() {
 

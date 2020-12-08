@@ -1,8 +1,6 @@
 package mta.Classes;
 
-import mta.AbstractClasses.Task;
-
-public class SitemapTask extends Task {
+public class SitemapTask implements Runnable {
     @Override
     public void run() {
 

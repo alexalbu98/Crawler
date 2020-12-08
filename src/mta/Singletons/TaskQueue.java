@@ -1,17 +1,16 @@
 package mta.Singletons;
 import java.util.ArrayList;
-import mta.AbstractClasses.Task;
 
 /** Queue that stores all the tasks that must be executed by threads. */
 public class TaskQueue {
     private static TaskQueue instance = null;
-    private ArrayList<Task> tasks;
+    private ArrayList<Runnable> tasks;
     public int finishedTasks;
     public int startedTasks;
 
     private TaskQueue()
     {
-        tasks = new ArrayList<Task>();
+        tasks = new ArrayList<>();
         finishedTasks = 0;
         startedTasks = 0;
     }
@@ -24,7 +23,7 @@ public class TaskQueue {
         return instance;
     }
 
-    public void addTask(Task task)
+    public void addTask(Runnable task)
     {
         tasks.add(task);
     }
@@ -43,7 +42,7 @@ public class TaskQueue {
      *This method returns the first task in the task queue
      * @return the first task in the list
      * */
-    public Task getTask()
+    public Runnable getTask()
     {
         return tasks.get(0);
     }

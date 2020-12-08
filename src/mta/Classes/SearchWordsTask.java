@@ -1,8 +1,6 @@
 package mta.Classes;
 
-import mta.AbstractClasses.Task;
-
-public class SearchWordsTask extends Task {
+public class SearchWordsTask implements Runnable {
     @Override
     public void run() {
 

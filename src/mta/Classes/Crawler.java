@@ -1,10 +1,10 @@
 package mta.Classes;
-import mta.AbstractClasses.Task;
 import mta.Exceptions.ArgumentNotSupportedException;
 import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
 import mta.Singletons.TaskFactory;
 import mta.Singletons.TaskQueue;
+import mta.Singletons.VisitedPageList;
 
 import java.io.*;
 import java.net.MalformedURLException;
@@ -160,25 +160,37 @@ public class Crawler {
     public void runCrawler() throws MalformedURLException {
         TaskFactory factory = TaskFactory.getInstance();
         TaskQueue queue = TaskQueue.getInstance();
+        VisitedPageList visited = VisitedPageList.getInstance();
         Page newPage = new Page();
         newPage.addURL(new URL("https://mta.ro/wp-content/uploads/2020/04/A-124-Tematica-diploma-ArmAv-2016-2020_vfinal-min.pdf"));
         Pages.add(newPage);
         for(Page page : Pages)
         {
-            try {
-                Task task = factory.makeTask(option);
-                task.addPage(page);
-                task.setDownloadDir(root_dir+ "/" + page.getURL());
-                task.setLogFile(log_file);
-                task.setDelay(delay);
-                task.setCurrentDepth(0);
-                task.crawlStrategy.setReadRobots(robots);
-                queue.addTask(task);
-                queue.startedTasks++;
-            }catch (Exception exp)
+            Runnable task = null;
+            if(option.equals("crawl"))
             {
-               System.out.println(exp.getMessage());
+                task = factory.makeCrawlTask();
             }
+            if(option.equals("sitemap"))
+            {
+                task = factory.makeSitemapTask();
+            }
+            if(option.equals("filter_type"))
+            {
+                task = factory.makeFilterTask();
+            }
+            if(option.equals("filer_size"))
+            {
+                task = factory.makeLimitDimensionTask();
+            }
+            if(option.equals("search"))
+            {
+                task = factory.makeSearchWordsTask();
+            }
+            queue.addTask(task);
+            queue.startedTasks++;
+            visited.addSites(page);
+
         }
 
         while(!queue.isQueueEmpty() && queue.startedTasks != queue.finishedTasks)

@@ -9,12 +9,11 @@ import java.util.ArrayList;
  * */
 public interface Crawl {
 
-    boolean canCrawl();
     void getRobotsFile() throws CannotCrawlException;
     ArrayList<String> getDisallowedList() throws CannotCrawlException;
     ArrayList<String> getSitemaps() throws CannotCrawlException;
     int getCrawlDelay() throws CannotCrawlException;
-    boolean getUseRobots() throws CannotCrawlException;
-
+    void setReadRobots(boolean state);
+    boolean getReadRobots();
 }
 

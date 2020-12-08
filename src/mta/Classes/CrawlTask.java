@@ -6,6 +6,8 @@ import mta.Exceptions.CannotCrawlException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 
+import java.util.ArrayList;
+
 public class CrawlTask extends Task {
     @Override
     public void run() {

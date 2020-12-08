@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 
 
 public class Crawler {
@@ -28,7 +30,7 @@ public class Crawler {
     private int size;
     private ArrayList<Page> Pages;
     private String option; //the operation chose by the user in the command line
-    ExecutorService pool;
+    private ExecutorService pool;
 
     /**The crawler class that does all the work*/
     public Crawler(String[] args)
@@ -143,8 +145,13 @@ public class Crawler {
 
     }
     private void createThreadPool() {
-
+        this.pool= Executors.newFixedThreadPool(nThreads);
     }
+
+    private void shutdownThreadPool(){
+        pool.shutdown();
+    }
+
 
     /**
      * This method creates a task for each file in file list uses the thread pool to executes them.

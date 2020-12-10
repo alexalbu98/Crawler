@@ -21,6 +21,11 @@ public class TaskFactory {
         return new CrawlTask();
     }
 
+    public Runnable makeCrawlTask(Page page, int depth, int maxDepth, String logFile, String rootDir, boolean useRobots)
+    {
+        return new CrawlTask(page, depth, maxDepth, logFile, rootDir, useRobots);
+    }
+
     public Runnable makeFilterTask()
     {
         return new FilterTask();

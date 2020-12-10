@@ -4,7 +4,11 @@ import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
 import mta.Exceptions.WordsNotSpecifiedException;
 import mta.Singletons.*;
-import java.awt.*;
+import mta.Singletons.SearchWordsList;
+import mta.Singletons.TaskFactory;
+import mta.Singletons.ThreadPool;
+import mta.Singletons.VisitedPageList;
+
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,9 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+
 
 
 public class Crawler {
@@ -43,14 +45,9 @@ public class Crawler {
         depth = 3;
         delay = 5;
         robots = true;
-        root_dir = "C:\\Users\\TEO\\Desktop\\Cursuri\\Anul 4\\Ingineria Programarii\\Tema1\\Implementare\\Crawler\\Download";
         size = 0;
-        option="search";
-        searchWords=new ArrayList<String>();
-        searchWords.add("abc");searchWords.add("src");searchWords.add("main");searchWords.add("link");
-        searchWords.add("stack");searchWords.add("Academia");
         try {
-            //checkArgs(args);
+            checkArgs(args);
             readConfigFile();
             readSitesFile();
         }catch (Exception exception)
@@ -92,6 +89,7 @@ public class Crawler {
                 int index = argsList.indexOf("-conf");
                 if(index+1<argsList.size()){
                     config_file = argsList.get(index+1);
+                    System.out.printf("Using file %s as configuration file.\n", config_file);
                 }else
                 {
                     System.out.println("No configuration file specified." +
@@ -198,9 +196,8 @@ public class Crawler {
 
 
     /**
-     * This method creates a task for each file in file list uses the thread pool to executes them.
-     * @returns void
-     */
+     * Starts the execution of the tasks using a thread pool
+     * */
     public void runCrawler() throws MalformedURLException, InterruptedException, ExecutionException, FileNotFoundException, UnsupportedEncodingException {
         TaskFactory factory = TaskFactory.getInstance();
         ThreadPool pool = ThreadPool.getInstance(nThreads);
@@ -208,13 +205,15 @@ public class Crawler {
         Page newPage = new Page();
         newPage.addURL(new URL("https://mta.ro/"));
         Pages.add(newPage);
+        //for each site a task will be created
         for (Page page : Pages) {
             Runnable task = null;
             if(visited.pageAlreadyVisited(page))
                 continue;
 
             if (option.equals("crawl")) {
-                task = factory.makeCrawlTask(page, 0, 2, log_file, root_dir, robots);
+                //starting depth is always 0
+                task = factory.makeCrawlTask(page, 0, depth, delay, log_file, root_dir, robots);
             }
             if (option.equals("sitemap")) {
                 task = factory.makeSitemapTask();
@@ -228,9 +227,15 @@ public class Crawler {
             if (option.equals("search")) {
                 task = factory.makeSearchWordsTask(searchWords,root_dir);
             }
-            pool.incrementActiveTasks();
-            pool.runTask(task);
+            if(task!=null){
+                pool.incrementActiveTasks();
+                pool.runTask(task);
+            }else
+                {
+                    System.out.println("Failed to create task for page " + page.getURL().toString());
+                }
         }
+        //awaits all tasks to finish
         while (pool.getActiveTasks()!=0)
         {
             Thread.sleep(10);

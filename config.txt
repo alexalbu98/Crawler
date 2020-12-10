@@ -1,7 +1,11 @@
 n_threads=50
-depth=20
+depth=3
 log_level=3
 root_dir=D:/Download
 delay=100ms
+<<<<<<< HEAD
 robots=0
 extensions=.txt,.css,.html,.pdf,.js
+=======
+robots=true
+>>>>>>> Creare functie de descarcare recursiva a site-urilor

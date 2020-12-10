@@ -1,10 +1,11 @@
 package mta.Singletons;
 import mta.Classes.*;
-import mta.Exceptions.TaskTypeNotSupportedException;
-
 import java.util.ArrayList;
 
-
+/**
+ *
+ * * Task factory that creates tasks
+ * */
 public class TaskFactory {
     static private TaskFactory factory = null;
     private TaskFactory(){};
@@ -23,9 +24,9 @@ public class TaskFactory {
         return new CrawlTask();
     }
 
-    public Runnable makeCrawlTask(Page page, int depth, int maxDepth, String logFile, String rootDir, boolean useRobots)
+    public Runnable makeCrawlTask(Page page, int depth, int maxDepth, int delay, String logFile, String rootDir, boolean useRobots)
     {
-        return new CrawlTask(page, depth, maxDepth, logFile, rootDir, useRobots);
+        return new CrawlTask(page, depth, maxDepth, delay, logFile, rootDir, useRobots);
     }
 
     public Runnable makeFilterTask()

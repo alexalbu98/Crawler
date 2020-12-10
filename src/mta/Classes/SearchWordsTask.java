@@ -3,13 +3,10 @@ package mta.Classes;
 import mta.Singletons.SearchWordsList;
 import mta.Singletons.ThreadPool;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
 public class SearchWordsTask implements Runnable {
     private ArrayList<String> key_words;
     String path;

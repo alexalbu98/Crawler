@@ -23,7 +23,15 @@ public class VisitedPageList {
 
     public boolean pageAlreadyVisited(Page page)
     {
-        return sites.contains(page);
+       boolean found = false;
+       for(Page it: sites)
+       {
+           if (it.getURL().toString().equals(page.getURL().toString())) {
+               found = true;
+               break;
+           }
+       }
+       return found;
     }
 
     public void addSites(Page page)

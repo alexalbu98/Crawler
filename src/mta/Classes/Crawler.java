@@ -2,19 +2,22 @@ package mta.Classes;
 import mta.Exceptions.ArgumentNotSupportedException;
 import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
+import mta.Exceptions.WordsNotSpecifiedException;
 import mta.Singletons.TaskFactory;
-import mta.Singletons.TaskQueue;
+import mta.Singletons.ThreadPool;
 import mta.Singletons.VisitedPageList;
 
+import java.awt.*;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+import java.util.concurrent.Future;
 
 
 public class Crawler {
@@ -25,12 +28,13 @@ public class Crawler {
     private int depth;
     private int log_level;
     private String root_dir;
-    private Boolean robots; //variable that tells the crawler if to read robots.txt or not
+    private final Boolean robots; //variable that tells the crawler if to read robots.txt or not
     private int delay;
     private int size;
-    private ArrayList<Page> Pages;
+    private final ArrayList<Page> Pages;
     private String option; //the operation chose by the user in the command line
-    private ExecutorService pool;
+    private ArrayList<String> searchWords;
+
 
     /**The crawler class that does all the work*/
     public Crawler(String[] args)
@@ -48,11 +52,11 @@ public class Crawler {
         try {
             checkArgs(args);
             readConfigFile();
-            createThreadPool();
             readSitesFile();
         }catch (Exception exception)
         {
             System.out.println(exception.getMessage());
+            System.exit(0);
         }
     }
 
@@ -61,7 +65,7 @@ public class Crawler {
      * @param args the arguments passed by the user in the command line
      * @returns void
      */
-    private void checkArgs(String[]args) throws SitesFileNotSpecifiedException, SizeNotSpecifiedException, ArgumentNotSupportedException {
+    private void checkArgs(String[]args) throws SitesFileNotSpecifiedException, SizeNotSpecifiedException, ArgumentNotSupportedException, WordsNotSpecifiedException {
         List<String> argsList = new ArrayList<>(Arrays.asList(args));
         if(argsList.get(0).equals("crawl")
                 || argsList.get(0).equals("sitemap")
@@ -115,6 +119,35 @@ public class Crawler {
                         throw new SizeNotSpecifiedException();
                     }
             }
+
+            if(argsList.contains("search"))
+            {
+                if(argsList.contains("-words"))
+                {
+                    int index = argsList.indexOf("-words");
+                    searchWords = new ArrayList<>();
+                    while((index+1)!=argsList.size())
+                    {
+                        String element = argsList.get(index+1);
+                        if(!element.equals("-conf") && !element.equals("-s"))
+                        {
+                            searchWords.add(element);
+                        }else
+                            {
+                                break;
+                            }
+                        index = index+1;
+                    }
+
+                }else
+                    {
+                        throw new WordsNotSpecifiedException();
+                    }
+                for(String element : searchWords)
+                {
+                    System.out.println(element);
+                }
+            }
         }else
             {
                 throw new ArgumentNotSupportedException();
@@ -144,64 +177,43 @@ public class Crawler {
     private void readSitesFile(){
 
     }
-    private void createThreadPool() {
-        this.pool= Executors.newFixedThreadPool(nThreads);
-    }
-
-    private void shutdownThreadPool(){
-        pool.shutdown();
-    }
 
 
     /**
      * This method creates a task for each file in file list uses the thread pool to executes them.
      * @returns void
      */
-    public void runCrawler() throws MalformedURLException {
+    public void runCrawler() throws MalformedURLException, InterruptedException, ExecutionException {
         TaskFactory factory = TaskFactory.getInstance();
-        TaskQueue queue = TaskQueue.getInstance();
+        ThreadPool pool = ThreadPool.getInstance(nThreads);
         VisitedPageList visited = VisitedPageList.getInstance();
         Page newPage = new Page();
-        newPage.addURL(new URL("https://mta.ro/wp-content/uploads/2020/04/A-124-Tematica-diploma-ArmAv-2016-2020_vfinal-min.pdf"));
+        newPage.addURL(new URL("https://mta.ro/"));
         Pages.add(newPage);
-        for(Page page : Pages)
-        {
+        for (Page page : Pages) {
             Runnable task = null;
-            if(option.equals("crawl"))
-            {
-                task = factory.makeCrawlTask();
+            if(visited.pageAlreadyVisited(page))
+                continue;
+
+            if (option.equals("crawl")) {
+                task = factory.makeCrawlTask(page, 0, 3, log_file, root_dir, robots);
             }
-            if(option.equals("sitemap"))
-            {
+            if (option.equals("sitemap")) {
                 task = factory.makeSitemapTask();
             }
-            if(option.equals("filter_type"))
-            {
+            if (option.equals("filter_type")) {
                 task = factory.makeFilterTask();
             }
-            if(option.equals("filer_size"))
-            {
+            if (option.equals("filer_size")) {
                 task = factory.makeLimitDimensionTask();
             }
-            if(option.equals("search"))
-            {
+            if (option.equals("search")) {
                 task = factory.makeSearchWordsTask();
             }
-            queue.addTask(task);
-            queue.startedTasks++;
-            visited.addSites(page);
-
+            pool.runTask(task);
         }
 
-        while(!queue.isQueueEmpty() && queue.startedTasks != queue.finishedTasks)
-        {
-            if(!queue.isQueueEmpty()){
-                pool.execute(queue.getTask());
-                queue.removeTask();
-            }
-        }
-
-
+        pool.shutdownThreadPool();
 
     }
 }

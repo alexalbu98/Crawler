@@ -196,7 +196,7 @@ public class Crawler {
                 continue;
 
             if (option.equals("crawl")) {
-                task = factory.makeCrawlTask(page, 0, 3, log_file, root_dir, robots);
+                task = factory.makeCrawlTask(page, 0, 2, log_file, root_dir, robots);
             }
             if (option.equals("sitemap")) {
                 task = factory.makeSitemapTask();
@@ -210,9 +210,13 @@ public class Crawler {
             if (option.equals("search")) {
                 task = factory.makeSearchWordsTask();
             }
+            pool.incrementActiveTasks();
             pool.runTask(task);
         }
-
+        while (pool.getActiveTasks()!=0)
+        {
+            Thread.sleep(10);
+        }
         pool.shutdownThreadPool();
 
     }

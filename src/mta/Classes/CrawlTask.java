@@ -1,7 +1,4 @@
 package mta.Classes;
-
-
-import mta.Exceptions.MaxDepthReachedException;
 import mta.Singletons.ThreadPool;
 import mta.Singletons.VisitedPageList;
 
@@ -110,11 +107,19 @@ public class CrawlTask implements Runnable {
                 //the next page must not be visited
                 if(!list.pageAlreadyVisited(page)) {
                     CrawlTask newTask = new CrawlTask(page, currentDepth + 1, maxDepth, logFile, downloadDirectory, useRobots);
+                    pool.incrementActiveTasks();
                     pool.runTask(newTask);
                 }
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        }finally {
+            try {
+                pool.decrementActiveTasks();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
         }
     }
 }

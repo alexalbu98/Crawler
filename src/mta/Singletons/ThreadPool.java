@@ -3,6 +3,7 @@ package mta.Singletons;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.Semaphore;
 
 /**
  * This singleton class uses a thread pool to execute tasks
@@ -11,11 +12,16 @@ public class ThreadPool {
 
     private ExecutorService pool;
     private static ThreadPool instance=null;
+    private Semaphore mutex;
+    private int activeTasks;
 
     private ThreadPool(int nThreads)
     {
         pool = Executors.newFixedThreadPool(nThreads);
+        mutex = new Semaphore(1);
+        activeTasks = 0;
     }
+
     private ThreadPool(){}
 
     public static ThreadPool getInstance()
@@ -41,12 +47,28 @@ public class ThreadPool {
      * @param task the task that must be executed.
      */
     public void runTask(Runnable task) throws InterruptedException {
-       Future<?>result = pool.submit(task);
-       //awaits task to finish
-       while(!result.isDone())
-       {
-           Thread.sleep(10);
-       }
+        pool.execute(task);
+    }
+
+    public void incrementActiveTasks() throws InterruptedException {
+        mutex.acquire();
+        activeTasks++;
+        mutex.release();
+
+    }
+
+    public void decrementActiveTasks() throws InterruptedException {
+        mutex.acquire();
+        activeTasks--;
+        mutex.release();
+    }
+
+    public int getActiveTasks() throws InterruptedException {
+        int value;
+        mutex.acquire();
+        value = activeTasks;
+        mutex.release();
+        return  value;
     }
 
     public void shutdownThreadPool(){

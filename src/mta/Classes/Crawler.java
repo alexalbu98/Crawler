@@ -3,6 +3,7 @@ import mta.Exceptions.ArgumentNotSupportedException;
 import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
 import mta.Exceptions.WordsNotSpecifiedException;
+import mta.Singletons.SearchWordsList;
 import mta.Singletons.TaskFactory;
 import mta.Singletons.ThreadPool;
 import mta.Singletons.VisitedPageList;
@@ -46,12 +47,15 @@ public class Crawler {
         depth = 3;
         delay = 5;
         robots = true;
-        root_dir = "CrawlerDownloads";
+        root_dir = "C:\\Users\\TEO\\Desktop\\Cursuri\\Anul 4\\Ingineria Programarii\\Tema1\\Implementare\\Crawler\\Download";
         size = 0;
-
+        option="search";
+        searchWords=new ArrayList<String>();
+        searchWords.add("abc");searchWords.add("src");searchWords.add("main");searchWords.add("link");
+        searchWords.add("stack");searchWords.add("Academia");
         try {
-            checkArgs(args);
-            readConfigFile();
+            //checkArgs(args);
+           // readConfigFile();
             readSitesFile();
         }catch (Exception exception)
         {
@@ -164,15 +168,23 @@ public class Crawler {
         while ((st = br.readLine()) != null) {
             parts = st.split("=");
             switch (parts[0]) {
-                case "n_threads" -> nThreads = Integer.parseInt(parts[1]);
-                case "depth" -> depth = Integer.parseInt(parts[1]);
-                case "log_level" -> log_level = Integer.parseInt(parts[1]);
-                case "root_dir" -> root_dir = parts[1];
-                case "delay" -> delay = Integer.parseInt(parts[1].substring(0, parts[1].length() - 2));
+                case "n_threads":
+                    nThreads = Integer.parseInt(parts[1]);
+                    break;
+                case "depth":
+                    depth = Integer.parseInt(parts[1]);
+                    break;
+                case "log_level":
+                    log_level = Integer.parseInt(parts[1]);
+                    break;
+                case "root_dir":
+                    root_dir = parts[1];
+                    break;
+                case "delay":
+                    delay = Integer.parseInt(parts[1].substring(0, parts[1].length() - 2));
+                    break;
             }
         }
-        String print="n_threads:"+nThreads+"\ndepth:"+depth+"\nlog_level:"+log_level+"\nroot_dir:"+root_dir+"\ndelay:"+delay;
-        System.out.println(print);
     }
     private void readSitesFile(){
 
@@ -183,7 +195,7 @@ public class Crawler {
      * This method creates a task for each file in file list uses the thread pool to executes them.
      * @returns void
      */
-    public void runCrawler() throws MalformedURLException, InterruptedException, ExecutionException {
+    public void runCrawler() throws MalformedURLException, InterruptedException, ExecutionException, FileNotFoundException, UnsupportedEncodingException {
         TaskFactory factory = TaskFactory.getInstance();
         ThreadPool pool = ThreadPool.getInstance(nThreads);
         VisitedPageList visited = VisitedPageList.getInstance();
@@ -208,7 +220,7 @@ public class Crawler {
                 task = factory.makeLimitDimensionTask();
             }
             if (option.equals("search")) {
-                task = factory.makeSearchWordsTask();
+                task = factory.makeSearchWordsTask(searchWords,root_dir);
             }
             pool.incrementActiveTasks();
             pool.runTask(task);
@@ -218,6 +230,7 @@ public class Crawler {
             Thread.sleep(10);
         }
         pool.shutdownThreadPool();
-
+        SearchWordsList map = SearchWordsList.getInstance();
+        map.print();
     }
 }

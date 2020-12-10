@@ -2,6 +2,8 @@ package mta.Singletons;
 import mta.Classes.*;
 import mta.Exceptions.TaskTypeNotSupportedException;
 
+import java.util.ArrayList;
+
 
 public class TaskFactory {
     static private TaskFactory factory = null;
@@ -34,9 +36,9 @@ public class TaskFactory {
     {
         return new LimitDimensionTask();
     }
-    public Runnable makeSearchWordsTask()
+    public Runnable makeSearchWordsTask(ArrayList<String> S, String path)
     {
-        return new SearchWordsTask();
+        return new SearchWordsTask(S,path);
     }
     public Runnable makeSitemapTask()
     {

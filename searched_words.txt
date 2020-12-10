@@ -1,0 +1,30 @@
+-----------------------
+Key word "sula" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\testing\another_test\file.txt
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\testing\another_test\mure.txt
+-----------------------
+Key word "stack" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\plugins\bdthemes-element-pack-lite\assets\css\bdt-uikit.css
+-----------------------
+Key word "abc" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\test.txt
+-----------------------
+Key word "src" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\mta.html
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\plugins\bdthemes-element-pack-lite\assets\css\element-pack-site.css
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\themes\HighendWP\styles.css
+-----------------------
+Key word "link" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\mta.html
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\plugins\bdthemes-element-pack-lite\assets\css\bdt-uikit.css
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\plugins\bdthemes-element-pack-lite\assets\css\element-pack-site.css
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\themes\HighendWP\styles.css
+-----------------------
+Key word "Academia" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\mta.html
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\testing\another_test\mure.txt
+-----------------------
+Key word "main" was found in the next files:
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\mta.html
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\plugins\bdthemes-element-pack-lite\assets\css\element-pack-site.css
+     -C:\Users\TEO\Desktop\Cursuri\Anul 4\Ingineria Programarii\Tema1\Implementare\Crawler\Download\wp-content\themes\HighendWP\styles.css

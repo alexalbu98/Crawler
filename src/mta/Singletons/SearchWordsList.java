@@ -38,6 +38,7 @@ public class SearchWordsList<Map> {
      * This function will add a file path(in the map) for the word that was found
      * @param  word,path  for the word and the file path
      * */
+
     public void addWords(String word,String path)
     {
         ArrayList<String> list;
@@ -50,9 +51,11 @@ public class SearchWordsList<Map> {
         list.add(path);
         this.words_map.put(word,list);
     }
+
     /**
      * This function will print all the values in the map
      * */
+
     public void print() throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter writer = new PrintWriter("searched_words.txt", "UTF-8");
         for (java.util.Map.Entry<String,ArrayList<String>> entry : this.words_map.entrySet()) {

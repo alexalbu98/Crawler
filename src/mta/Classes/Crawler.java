@@ -4,7 +4,6 @@ import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
 import mta.Exceptions.WordsNotSpecifiedException;
 import mta.Singletons.*;
-
 import java.awt.*;
 import java.io.*;
 import java.net.MalformedURLException;
@@ -189,6 +188,7 @@ public class Crawler {
                     for (String s: extension) {
                         allowed_files.addType(s);
                     }
+
             }
         }
     }

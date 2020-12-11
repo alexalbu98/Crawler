@@ -17,11 +17,11 @@ public class SearchWordsTask implements Runnable {
         this.key_words = (ArrayList<String>)S.clone();
         this.path=path;
     }
-
     /**
      * This function will read all the content from a file
      * @param  filePath file path
      * */
+
 
 
     private static String readContent(String filePath)

@@ -52,10 +52,6 @@ public class SearchWordsList<Map> {
         this.words_map.put(word,list);
     }
 
-    /**
-     * This function will print all the values in the map
-     * */
-
     public void print() throws FileNotFoundException, UnsupportedEncodingException {
         PrintWriter writer = new PrintWriter("searched_words.txt", "UTF-8");
         for (java.util.Map.Entry<String,ArrayList<String>> entry : this.words_map.entrySet()) {

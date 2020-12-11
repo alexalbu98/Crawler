@@ -3,10 +3,7 @@ import mta.Exceptions.ArgumentNotSupportedException;
 import mta.Exceptions.SitesFileNotSpecifiedException;
 import mta.Exceptions.SizeNotSpecifiedException;
 import mta.Exceptions.WordsNotSpecifiedException;
-import mta.Singletons.SearchWordsList;
-import mta.Singletons.TaskFactory;
-import mta.Singletons.ThreadPool;
-import mta.Singletons.VisitedPageList;
+import mta.Singletons.*;
 
 import java.awt.*;
 import java.io.*;
@@ -29,7 +26,7 @@ public class Crawler {
     private int depth;
     private int log_level;
     private String root_dir;
-    private final Boolean robots; //variable that tells the crawler if to read robots.txt or not
+    private Boolean robots; //variable that tells the crawler if to read robots.txt or not
     private int delay;
     private int size;
     private final ArrayList<Page> Pages;
@@ -55,7 +52,7 @@ public class Crawler {
         searchWords.add("stack");searchWords.add("Academia");
         try {
             //checkArgs(args);
-           // readConfigFile();
+            readConfigFile();
             readSitesFile();
         }catch (Exception exception)
         {
@@ -183,6 +180,15 @@ public class Crawler {
                 case "delay":
                     delay = Integer.parseInt(parts[1].substring(0, parts[1].length() - 2));
                     break;
+                case "robots":
+                    robots =  Boolean.parseBoolean(parts[1]);
+                    break;
+                case "extensions":
+                    AllowedFilesList allowed_files=AllowedFilesList.getInstance();
+                    String[] extension=parts[1].split(",");
+                    for (String s: extension) {
+                        allowed_files.addType(s);
+                    }
             }
         }
     }

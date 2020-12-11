@@ -3,3 +3,5 @@ depth=20
 log_level=3
 root_dir=D:/Download
 delay=100ms
+robots=0
+extensions=.txt,.css,.html,.pdf,.js

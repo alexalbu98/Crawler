@@ -17,7 +17,10 @@ public class SearchWordsTask implements Runnable {
         this.key_words = (ArrayList<String>)S.clone();
         this.path=path;
     }
-
+    /**
+     * This function will read all the content from a file
+     * @param  filePath file path
+     * */
     private static String readContent(String filePath)
     {
         String content = "";
@@ -32,6 +35,11 @@ public class SearchWordsTask implements Runnable {
 
         return content;
     }
+    /**
+     * This function is called when a word is found in a file.It will put in the map the file path
+     * where the word was found.
+     * @param  f,word  for filestream and word
+     * */
     private void wasFound(File f, String word){
         SearchWordsList map = SearchWordsList.getInstance();
         map.addWords(word,f.getPath());

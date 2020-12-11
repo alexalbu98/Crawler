@@ -9,7 +9,6 @@ public class AllowedFilesList {
     {
         types = new ArrayList<String>();
     }
-
     static public AllowedFilesList getInstance()
     {
         if(instance == null){

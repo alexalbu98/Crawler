@@ -1,0 +1,688 @@
+INFO: Successfully crawled page https://mta.ro/
+ERROR: Response from site https://mta.ro/wp-admin/admin-ajax.php was 400
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/organigrama.pdf
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/
+INFO: Successfully crawled page https://mta.ro/mesajul-rectorului
+INFO: Successfully crawled page https://schema.org
+INFO: Successfully crawled page https://mta.ro/posturi-vacante
+INFO: Successfully crawled page https://schema.org/WebPage
+INFO: Successfully crawled page https://gmpg.org/xfn/11
+ERROR: Response from site https://mta.ro/xmlrpc.php?rsd was 403
+ERROR: Response from site https://mta.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmta.ro%2F was 500
+ERROR: Response from site https://mta.ro/wp-json/wp/v2/pages/4 was 500
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Response from site https://mta.ro/wp-json/ was 500
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/cropped-android-chrome-512x512-192x192.png
+ERROR: Connection reset
+ERROR: Connection reset
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/uploads/highend/dynamic-styles.css?ver=1605715672
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/highend/dynamic-styles.css?ver=1605715672
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Response from site https://mta.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmta.ro%2F&#038;format=xml was 500
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/#organization
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/regulamente-de-organizare-si-functionare
+INFO: Successfully crawled page http://www.roarmycatering.ro/
+WARNING: Failed to save file D:/Download/mta.ro//?s=.html
+INFO: Successfully crawled page https://mta.ro/?s=
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/titluri-si-distinctii-acordate-de-senatul-universitar
+INFO: Successfully crawled page https://mta.ro/#logo
+INFO: Successfully crawled page https://mta.ro/comisia-de-etica-universitara
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://www.facebook.com/AcademiaTehnicaMilitara/
+INFO: Successfully crawled page https://www.facebook.com/AcademiaTehnicaMilitara/
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Response from site http://asatm.ro/ was 301
+ERROR: Response from site http://asatm.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/proiecte-in-derulare
+INFO: Successfully crawled page https://mta.ro/legislatie
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/Buget.pdf
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro#webpage
+INFO: Successfully crawled page https://mta.ro/#logo
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_alb-300x108.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_alb-300x108.png
+INFO: Successfully crawled page https://mta.ro/#website
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/structura-anilor-universitari
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/stiri-anunturi/anunturi-mobilitati-erasmus
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://api.w.org/
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/comisia-de-etica-universitara
+INFO: Successfully crawled page https://schema.org/SiteNavigationElement
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://schema.org/WPHeader
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_alb.png
+INFO: Successfully crawled page https://mta.ro/regulamente-de-organizare-si-functionare
+INFO: Successfully crawled page https://mta.ro/solicitare-informatii
+INFO: Successfully crawled page https://mta.ro/proiecte-finalizate
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page http://www.roarmycatering.ro/
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Response from site http://asatm.ro/ was 301
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/about-us
+ERROR: Connection reset
+ERROR: Response from site http://asatm.ro/ was 301
+INFO: Successfully crawled page https://www.mta.ro/international/interuniversity-contact-ro/
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/conducere
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/prezentare
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://www.mta.ro/wp-content/uploads/2019/08/Brosura-Cercetare-stiintifica-min.pdf
+ERROR: Connection reset
+INFO: Successfully crawled page https://www.mta.ro/international/cerc-ro/
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Response from site http://asatm.ro/ was 301
+INFO: Successfully crawled page https://www.mta.ro/international/cerc-ro/
+ERROR: Connection reset
+ERROR: Response from site http://www.bsda.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/01/imageedit_8_2318317653.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/IEP-300x117.png
+ERROR: Connection reset
+ERROR: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/certmil-site-300x97.png
+ERROR: Connection reset
+INFO: Successfully crawled page http://anelisplus2020.anelisplus.ro/
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/mapn-150x150.png
+ERROR: Dangling meta character '*' near index 8
+ /bkshp?*q=*
+        ^
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/07/ATM_EDSC-Logo-ESDC-min-150x150.jpg
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/facultatea-a
+INFO: Successfully crawled page http://www.iwat2020.org/
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/BSDA_2020-212x150.jpg
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/COMM2020.png
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+INFO: Successfully crawled page https://mta.ro/scoala-doctorala
+INFO: Successfully crawled page https://mta.ro/departamentul-de-limbi-straine-stiinte-militare-si-management
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/aracis-2016.jpg
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/MCWE.png
+INFO: Successfully crawled page https://www.mta.ro/international/esdc-ro/
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/mapn.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/Buget.pdf
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/cerc.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/certmil-site.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/08/certmil-site.png
+INFO: Successfully crawled page https://mta.ro/evenimente/depunerea-juramantului-militar-de-catre-studentii-academiei-tehnice-militare-ferdinand-i
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/mechanic-visitor-counter/styles/image/web/4.gif
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/10/final_vectorized10000px-min-230x230.png
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/mechanic-visitor-counter/counter/mvcvisit.png
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/simple-mail-address-encoder/smae.js?ver=1.0.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/simple-mail-address-encoder/smae.js?ver=1.0.0
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/jquery/ui/position.min.js?ver=1.11.4
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/mechanic-visitor-counter/styles/image/web/2.gif
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/Stema-ATM-Ferdinand-I-1-870x1024.png
+ERROR: Connection reset
+INFO: Successfully crawled page https://comms.ro
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=6.4.0
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/mesaje-ale-partenerilor-internationali-cu-ocazia-aniversarii-a-70-ani-de-excelenta-in-invatamantul-politehnic-militar
+INFO: Successfully crawled page https://mta.ro/evenimente/conferinta-internationala-secitc-2020
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/ferdinand2-min-224x300.png
+INFO: Successfully crawled page https://mta.ro/evenimente/editiei-a-iv-a-a-universitatii-de-vara-in-domeniul-ingineriei-autovehiculelor-univia-2020
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.4.0
+ERROR: Connection reset
+ERROR: Connection reset
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/mechanic-visitor-counter/styles/css/default.css
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/dist/i18n.min.js?ver=bb7c3c45d012206bfcd73d6a31f84d9e
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/dist/i18n.min.js?ver=bb7c3c45d012206bfcd73d6a31f84d9e
+ERROR: Connection reset
+ERROR: Connection reset
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/js/scripts.js?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/js/scripts.js?ver=3.6.12
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4
+INFO: Successfully crawled page https://mcwe2020mta.wixsite.com/website
+INFO: Successfully crawled page https://mta.ro/evenimente/vizita-de-lucru-a-loctiitorului-pentru-operatii-si-instructie-al-sefului-statului-major-al-apararii
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/js/jquery.flexslider.js?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/js/jquery.flexslider.js?ver=3.6.12
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/js/jquery.validate.js?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/js/jquery.validate.js?ver=3.6.12
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/prevent-xss-vulnerability/frontend/js/script-1.0.0.min.js?ver=f7b7f293086dedffa78d5bf6d434a0a0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/prevent-xss-vulnerability/frontend/js/script-1.0.0.min.js?ver=f7b7f293086dedffa78d5bf6d434a0a0
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/wp-embed.min.js?ver=f7b7f293086dedffa78d5bf6d434a0a0
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/wp-embed.min.js?ver=f7b7f293086dedffa78d5bf6d434a0a0
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/ferdinand2-min.png
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.4.0
+INFO: Successfully crawled page https://www.mta.ro/international/cerc-ro/
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/js/jquery.owl.carousel.min.js?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/js/jquery.owl.carousel.min.js?ver=3.6.12
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/underscore.min.js?ver=1.8.3
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/underscore.min.js?ver=1.8.3
+ERROR: Connection reset
+ERROR: Response from site http://www.pdf-tools.com was 301
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/ferdinand2-min.png
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=6.4.0
+WARNING: Failed to save file D:/Download/mta.ro/www.facebook.com//plugins/likebox.php?href=https://www.facebook.com/AcademiaTehnicaMilitara/&amp;width=247&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;show_border=false&amp;header=true&amp;height=270.html
+INFO: Successfully crawled page https://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/AcademiaTehnicaMilitara/&amp;width=247&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;show_border=false&amp;header=true&amp;height=270
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=6.4.0
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=6.4.0
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/js/jquery.custom.js?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/js/jquery.custom.js?ver=3.6.12
+ERROR: Response from site https://www.googletagmanager.com/ was 400
+INFO: Successfully crawled page https://yoast.com/#organization
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Yoast_SEO_FB.png
+INFO: Successfully crawled page https://uefiscdi.ro/
+INFO: Successfully crawled page https://yoast.com/#logo
+INFO: Successfully crawled page https://schema.org
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#primaryimage
+INFO: Successfully crawled page https://yoast.com/app/uploads/2020/09/Yoast_Icon_SocialMedia_500x500.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Yoast_SEO_FB.png
+INFO: Successfully crawled page https://yoast.com/about-us/team/joost-de-valk/
+INFO: Successfully crawled page https://yoast.com/
+INFO: Successfully crawled page https://mapn.ro
+INFO: Successfully crawled page https://yoast.com/
+INFO: Successfully crawled page https://yoast.com/#website
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#primaryimage
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#breadcrumb
+INFO: Successfully crawled page https://yoast.com/#website
+INFO: Successfully crawled page https://yoast.com/
+INFO: Successfully crawled page https://yoast.com/
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#breadcrumb
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//?s=.html
+INFO: Successfully crawled page https://yoast.com/?s=
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#webpage
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/css/fontawesome.min.css?ver=1605102906
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/css/fontawesome.min.css?ver=1605102906
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#product
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-classic.js?ver=1.11.6
+INFO: Successfully crawled page https://yoast.com/app/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-classic.js?ver=1.11.6
+INFO: Successfully crawled page https://yoast.com/#logo
+INFO: Successfully crawled page https://yoast.com/#organization
+INFO: Successfully crawled page https://yoast.com/about-us/team/joost-de-valk/
+INFO: Successfully crawled page https://uefiscdi.ro/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js?ver=1.11.6
+INFO: Successfully crawled page https://yoast.com/app/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js?ver=1.11.6
+INFO: Successfully crawled page https://yoast.com/#organization
+INFO: Successfully crawled page https://yoast.com/#organization
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Yoast_SEO_FB-1-1.png
+INFO: Successfully crawled page https://yoast.com/#organization
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-com/assets/js/yoast.js?ver=1605085733
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-com/assets/js/yoast.js?ver=1605085733
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#webpage
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/css/blocks/bordered-faq-block.min.css?ver=5.5
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/css/blocks/bordered-faq-block.min.css?ver=5.5
+INFO: Successfully crawled page https://yoast.com/app/uploads/2017/04/Yoast_SEO_icon_nw.png
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/js/yoast.js?ver=1606824810
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/js/yoast.js?ver=1606824810
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/js/includes/jquery.modal.min.js?ver=1585566973
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/js/includes/jquery.modal.min.js?ver=1585566973
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/js/includes/jquery-3.5.1.min.js?ver=1605618218
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/js/includes/jquery-3.5.1.min.js?ver=1605618218
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#product_image
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/seo/#/aggregate-offer/3327
+INFO: Successfully crawled page https://yoast.com/wp-json/wp/v2/yoast_plugins/3327
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/js/includes/jquery.modal.enhanced.js?ver=1585566973
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/js/includes/jquery.modal.enhanced.js?ver=1585566973
+ERROR: Response from site https://www.linkedin.com/company/1414157/ was 999
+INFO: Successfully crawled page https://en.wikipedia.org/wiki/Yoast
+INFO: Successfully crawled page https://yoast.com/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-192x192.png
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/
+INFO: Successfully crawled page https://yoast.com/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-270x270.png
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/yoast-logo-icon-152x152.png
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/yoast-logo-icon-512x512.png
+INFO: Successfully crawled page https://twitter.com/yoast
+INFO: Successfully crawled page https://yoast.com/wp-json/wp/v2/web-app-manifest
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/yoast-logo-icon-black.svg
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/themes/yoast-theme/css/style.min.css?ver=1607520901
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/css/style.min.css?ver=1607520901
+INFO: Successfully crawled page https://www.instagram.com/yoast/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoast.com%2Fwordpress%2Fplugins%2Fseo%2F
+INFO: Successfully crawled page https://yoast.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoast.com%2Fwordpress%2Fplugins%2Fseo%2F
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/yoast-logo-icon-120x120.png
+INFO: Successfully crawled page https://www.pinterest.com/yoast/
+INFO: Successfully crawled page https://www.angelleye.com/product/woocommerce-paypal-plugin/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoast.com%2Fwordpress%2Fplugins%2Fseo%2F&
+INFO: Successfully crawled page https://yoast.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoast.com%2Fwordpress%2Fplugins%2Fseo%2F&#038;format=xml
+INFO: Successfully crawled page https://www.facebook.com/yoast
+INFO: Successfully crawled page https://yoast.com
+INFO: Successfully crawled page https://yoast.com/app/uploads/2017/09/paymentmethods.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-192x192.png
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp-json/
+INFO: Successfully crawled page https://yoast.com/wp-json/
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/logo-diap.svg
+INFO: Successfully crawled page https://yoast.com/app/opensearch.xml
+INFO: Successfully crawled page https://yoast.com/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-32x32.png
+INFO: Successfully crawled page https://yoast.com/eu/cart/
+INFO: Successfully crawled page http://www.w3.org/2000/svg
+INFO: Successfully crawled page https://yoast.com/
+INFO: Successfully crawled page https://yoast.com/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-180x180.png
+INFO: Successfully crawled page http://www.w3.org/2000/svg
+INFO: Successfully crawled page https://yoast.com
+INFO: Successfully crawled page https://yoast.com/academy/
+INFO: Successfully crawled page https://yoast.com/shop/
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Savannah_Lauren_on_Twitter_.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Savannah_Lauren_on_Twitter_-250x86.png
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/logo.svg
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Steve_Morgan_on_Twitter.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Steve_Morgan_on_Twitter.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Haley_Bradley_on_Twitter-250x86.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Steve_Morgan_on_Twitter-250x87.png
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/
+INFO: Successfully crawled page https://yoast.com/help/
+INFO: Successfully crawled page https://yoast.com
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/
+INFO: Successfully crawled page https://my.yoast.com/
+INFO: Successfully crawled page https://yoast.com/seo-blog/
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Savannah_Lauren_on_Twitter_.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Savannah_Lauren_on_Twitter_-145x50.png
+INFO: Successfully crawled page https://yoast.com/privacy-policy
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Haley_Bradley_on_Twitter-145x50.png
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Steve_Morgan_on_Twitter-144x50.png
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com/www.googletagmanager.com//ns.html?id=GTM-NHRB36F.html
+INFO: Successfully crawled page https://www.googletagmanager.com/ns.html?id=GTM-NHRB36F
+INFO: Successfully crawled page https://yoast.com/app/themes/yoast-theme/images/logo.svg
+INFO: Successfully crawled page https://yoast.com/help/support/#premium
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/yoast-woocommerce-seo/
+INFO: Successfully crawled page https://yoast.com/help/dont-see-yoast-internal-linking-metabox/
+INFO: Successfully crawled page https://yoast.com/about-us/community/
+INFO: Successfully crawled page https://www.youtube.com/yoast
+INFO: Successfully crawled page https://yoast.com/help
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Haley_Bradley_on_Twitter.png
+INFO: Successfully crawled page https://yoast.com/must-reads-for-website-seo/
+INFO: Successfully crawled page https://yoast.com/yoast-seo-platforms/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com/www.algolia.com//?utm_source=WordPress&utm_medium=extension&utm_content=.html
+INFO: Successfully crawled page https://www.algolia.com/?utm_source=WordPress&utm_medium=extension&utm_content=
+INFO: Successfully crawled page https://yoast.com/app/uploads/2010/10/Haley_Bradley_on_Twitter-600x207.png
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/local-seo/
+INFO: Successfully crawled page https://yoast.com/about-us/
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/news-seo/
+INFO: Successfully crawled page http://www.w3.org/2000/svg
+INFO: Successfully crawled page https://yoast.com/refund-policy/
+INFO: Successfully crawled page http://www.w3.org/1999/xlink
+INFO: Successfully crawled page https://www.facebook.com/yoast
+INFO: Successfully crawled page https://yoast.com/seo-blog/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp/wp-includes/js/underscore.min.js?ver=1.8.3
+INFO: Successfully crawled page https://yoast.com/wp/wp-includes/js/underscore.min.js?ver=1.8.3
+INFO: Successfully crawled page https://yoast.com/werken-bij/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp/wp-includes/js/wp-util.min.js?ver=5.5
+INFO: Successfully crawled page https://yoast.com/wp/wp-includes/js/wp-util.min.js?ver=5.5
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//eu/cart/?add-to-cart=798087.html
+INFO: Successfully crawled page https://yoast.com/eu/cart/?add-to-cart=798087
+INFO: Successfully crawled page https://yoast.com/privacy-policy/
+INFO: Successfully crawled page https://yoast.com/reserved-rights/
+INFO: Successfully crawled page https://yoast.com/privacy-policy/
+INFO: Successfully crawled page https://developer.yoast.com/blog/
+INFO: Successfully crawled page https://yoast.com/eu/cart/
+INFO: Successfully crawled page https://yoast.com/wordpress/plugins/video-seo/
+INFO: Successfully crawled page https://yoast.com/jobs
+INFO: Successfully crawled page https://yoast.com/terms-of-service/
+INFO: Successfully crawled page https://yoast.com/contact/
+INFO: Successfully crawled page https://yoast.com/series/ask-yoast/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/facetwp-conditional-logic/assets/css/front.css?ver=1.3.0
+INFO: Successfully crawled page https://yoast.com/app/plugins/facetwp-conditional-logic/assets/css/front.css?ver=1.3.0
+INFO: Successfully crawled page https://yoast.com/tag/seo-basics/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//eu/cart/?add-to-cart=798087.html
+INFO: Successfully crawled page https://yoast.com/eu/cart/?add-to-cart=798087
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/algolia/js/algoliasearch/algoliasearch.jquery.min.js?ver=2.9.3
+INFO: Successfully crawled page https://yoast.com/app/plugins/algolia/js/algoliasearch/algoliasearch.jquery.min.js?ver=2.9.3
+INFO: Successfully crawled page https://yoast.com/series/annelieke-analytics/
+ERROR: Response from site http://lists.w3.org/Archives/Public/public-schemaorg was 301
+INFO: Successfully crawled page https://yoast.com/academy/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/algolia/js/autocomplete.js/autocomplete.min.js?ver=2.9.3
+INFO: Successfully crawled page https://yoast.com/app/plugins/algolia/js/autocomplete.js/autocomplete.min.js?ver=2.9.3
+INFO: Successfully crawled page https://yoast.com/academy/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/algolia/js/autocomplete-noconflict.js?ver=2.9.3
+INFO: Successfully crawled page https://yoast.com/app/plugins/algolia/js/autocomplete-noconflict.js?ver=2.9.3
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//wp/wp-includes/js/wp-embed.min.js?ver=5.5
+INFO: Successfully crawled page https://yoast.com/wp/wp-includes/js/wp-embed.min.js?ver=5.5
+ERROR: Response from site http://github.com/schemaorg/schemaorg was 301
+INFO: Successfully crawled page https://yoast.com/help
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//app/plugins/facetwp-conditional-logic/assets/js/front.js?ver=1.3.0
+INFO: Successfully crawled page https://yoast.com/app/plugins/facetwp-conditional-logic/assets/js/front.js?ver=1.3.0
+ERROR: Response from site http://webschemas.org/ was 301
+INFO: Successfully crawled page https://yoast.com/conference/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//eu/cart/?add-to-cart=798087.html
+INFO: Successfully crawled page https://yoast.com/eu/cart/?add-to-cart=798087
+INFO: Successfully crawled page https://yoast.com/academy/course/yoast-seo-wordpress-training/
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com/yoast.us1.list-manage.com//subscribe/post?u=ffa93edfe21752c921f860358&amp;id=972f1c9122.html
+INFO: Successfully crawled page https://yoast.us1.list-manage.com/subscribe/post?u=ffa93edfe21752c921f860358&amp;id=972f1c9122
+INFO: Successfully crawled page https://mta.ro/wp-includes/wlwmanifest.xml
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/css/responsive.css?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/css/responsive.css?ver=3.6.12
+INFO: Successfully crawled page https://instant.page/5.1.0
+ERROR: Response from site https://mta.ro/xmlrpc.php?rsd was 403
+INFO: Successfully crawled page https://mta.ro/comments/feed
+WARNING: Failed to save file D:/Download/mta.ro/yoast.com//eu/cart/?add-to-cart=798087.html
+INFO: Successfully crawled page https://yoast.com/eu/cart/?add-to-cart=798087
+ERROR: Response from site https://mta.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmta.ro%2Fmesajul-rectorului was 500
+ERROR: Response from site https://mta.ro/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmta.ro%2Fmesajul-rectorului&#038;format=xml was 500
+ERROR: Response from site https://mta.ro/wp-admin/admin-ajax.php was 400
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/css/dist/block-library/style.min.css?ver=f7b7f293086dedffa78d5bf6d434a0a0
+INFO: Successfully crawled page https://mta.ro/wp-includes/css/dist/block-library/style.min.css?ver=f7b7f293086dedffa78d5bf6d434a0a0
+INFO: Successfully crawled page https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+INFO: Successfully crawled page http://blog.schema.org
+INFO: Successfully crawled page https://mta.ro/feed
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/assets/css/icons.css?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/assets/css/icons.css?ver=3.6.12
+INFO: Successfully crawled page https://academy.yoast.com/courses/
+ERROR: Response from site https://mta.ro/wp-json/ was 500
+ERROR: Response from site https://mta.ro/wp-json/wp/v2/pages/1319 was 500
+INFO: Successfully crawled page https://mta.ro/legislatie
+WARNING: Failed to save file D:/Download/mta.ro//?s=.html
+INFO: Successfully crawled page https://mta.ro/?s=
+INFO: Successfully crawled page https://kb.yoast.com/kb/installation-guide-for-wordpress-seo/
+INFO: Successfully crawled page https://mta.ro/#website
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/cropped-android-chrome-512x512-192x192.png
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/uploads/highend/dynamic-styles.css?ver=1605715672
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/highend/dynamic-styles.css?ver=1605715672
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22
+INFO: Successfully crawled page https://gmpg.org/xfn/11
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.2.22
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.2.22
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/12/Stema-ATM-Ferdinand-I-1.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/cropped-android-chrome-512x512-32x32.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/cropped-android-chrome-512x512-180x180.png
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22
+INFO: Successfully crawled page https://api.w.org/
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/09/cropped-android-chrome-512x512-270x270.png
+INFO: Successfully crawled page https://mta.ro/regulamente-de-organizare-si-functionare
+INFO: Successfully crawled page https://mta.ro/senatul-universitar-al-academiei-tehnice-militare
+INFO: Successfully crawled page https://schema.org/WebPage
+INFO: Successfully crawled page https://mta.ro/#organization
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/themes/HighendWP/style.css?ver=3.6.12
+INFO: Successfully crawled page https://mta.ro/wp-content/themes/HighendWP/style.css?ver=3.6.12
+WARNING: Failed to save file D:/Download/mta.ro//wp-includes/js/jquery/jquery.js?ver=1.12.4-wp
+INFO: Successfully crawled page https://mta.ro/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp
+INFO: Successfully crawled page https://mta.ro/mesajul-rectorului#webpage
+INFO: Successfully crawled page https://mta.ro/programe-si-strategii
+INFO: Successfully crawled page https://www.w3.org/community/schemaorg
+INFO: Successfully crawled page https://mta.ro/posturi-vacante
+INFO: Successfully crawled page https://mta.ro/rapoarte-privind-starea-institutiei
+INFO: Successfully crawled page http://www.roarmycatering.ro/
+INFO: Successfully crawled page https://mta.ro/about-us
+INFO: Successfully crawled page https://mta.ro/conducere
+INFO: Successfully crawled page https://mta.ro/scurt-istoric
+INFO: Successfully crawled page https://mta.ro/consiliul-de-administratie
+INFO: Successfully crawled page https://mta.ro/#logo
+INFO: Successfully crawled page https://mta.ro/#organization
+INFO: Successfully crawled page https://mta.ro/#logo
+INFO: Successfully crawled page https://mta.ro/#website
+INFO: Successfully crawled page https://mta.ro/acces-gratuit-la-asme
+INFO: Successfully crawled page https://mta.ro/absolvire
+INFO: Successfully crawled page https://mta.ro/declaratii-de-avere-si-de-interese
+INFO: Successfully crawled page https://www.facebook.com/AcademiaTehnicaMilitara/
+INFO: Successfully crawled page https://mta.ro/comisia-de-etica-universitara
+WARNING: Failed to save file D:/Download/mta.ro//?p=1319.html
+INFO: Successfully crawled page https://mta.ro/?p=1319
+INFO: Successfully crawled page https://mta.ro/solicitare-informatii
+INFO: Successfully crawled page https://mta.ro/structura-anilor-universitari
+INFO: Successfully crawled page https://mta.ro/reglementari-interne
+INFO: Successfully crawled page https://mta.ro/scoala-doctorala
+WARNING: Failed to save file D:/Download/mta.ro//wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.4.0
+INFO: Successfully crawled page https://mta.ro/titluri-si-distinctii-acordate-de-senatul-universitar
+INFO: Successfully crawled page https://mta.ro/facultatea-c
+INFO: Successfully crawled page https://mta.ro/proiecte-in-derulare
+INFO: Successfully crawled page https://mta.ro/prezentare
+INFO: Successfully crawled page https://mta.ro/admitere
+INFO: Successfully crawled page https://mta.ro/facultatea-e
+INFO: Successfully crawled page https://www.facebook.com/AcademiaTehnicaMilitara/
+INFO: Successfully crawled page https://mta.ro/prezentare
+INFO: Successfully crawled page https://mta.ro/asigurarea-calitatii
+INFO: Successfully crawled page https://mta.ro/lista-procedurilor-atm
+INFO: Successfully crawled page https://mta.ro/structura-anilor-universitari
+INFO: Successfully crawled page https://mta.ro/proiecte-finalizate
+INFO: Successfully crawled page https://mta.ro/membrii-senatului-universitar-al-academiei-tehnice-militare
+INFO: Successfully crawled page https://mta.ro/conferinte
+INFO: Successfully crawled page https://mta.ro/facultatea-b
+INFO: Successfully crawled page https://mta.ro/facultatea-a
+ERROR: Response from site http://asatm.ro/ was 301
+ERROR: Response from site http://asatm.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/conducerea-batalioanelor-de-studenti
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/PAP-2020.pdf
+INFO: Successfully crawled page https://mta.ro/stiri-anunturi/anunturi-mobilitati-erasmus
+INFO: Successfully crawled page https://mta.ro/consiliu-stiintific
+INFO: Successfully crawled page https://mta.ro/departamentul-de-limbi-straine-stiinte-militare-si-management
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/reviste-isi-romanesti
+INFO: Successfully crawled page https://mta.ro/studenti-gradati
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_negru.png
+INFO: Successfully crawled page https://mta.ro/posturi-vacante
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page http://www.roarmycatering.ro/
+INFO: Successfully crawled page https://schema.org/SiteNavigationElement
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/Buget.pdf
+INFO: Successfully crawled page https://mta.ro/garda-drapelului
+INFO: Successfully crawled page https://api.w.org/
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_alb.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_alb.png
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2019/02/logo_negru.png
+INFO: Successfully crawled page https://mta.ro/sefi-de-an
+INFO: Successfully crawled page https://mta.ro/regulamente-de-organizare-si-functionare
+INFO: Successfully crawled page https://jpic.mta.ro/
+INFO: Successfully crawled page https://mta.ro/wp-content/uploads/2020/03/PAP-2020.pdf
+INFO: Successfully crawled page https://schema.org/WPHeader
+INFO: Successfully crawled page https://mta.ro/solicitare-informatii
+INFO: Successfully crawled page https://www.mta.ro/international/interuniversity-partners-ro/
+INFO: Successfully crawled page https://mta.ro/scurt-istoric
+INFO: Successfully crawled page https://mta.ro/senatul-universitar-al-academiei-tehnice-militare
+INFO: Successfully crawled page https://mta.ro/consiliul-de-administratie
+INFO: Successfully crawled page https://mta.ro/facultatea-a
+INFO: Successfully crawled page https://mta.ro/reglementari-interne
+INFO: Successfully crawled page https://mta.ro/legislatie
+INFO: Successfully crawled page https://mta.ro/rapoarte-privind-starea-institutiei
+INFO: Successfully crawled page https://mta.ro/about-us
+INFO: Successfully crawled page https://mta.ro/programe-si-strategii
+INFO: Successfully crawled page https://downloads.wordpress.org/plugin/wordpress-seo.latest-stable.zip
+INFO: Successfully crawled page https://mta.ro/titluri-si-distinctii-acordate-de-senatul-universitar
+INFO: Successfully crawled page https://www.mta.ro/wp-content/uploads/2019/08/Brosura-Cercetare-stiintifica-min.pdf
+INFO: Successfully crawled page https://mta.ro/conducere
+INFO: Successfully crawled page https://mta.ro/structura-anilor-universitari
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/membrii-senatului-universitar-al-academiei-tehnice-militare
+INFO: Successfully crawled page https://mta.ro/facultatea-e
+INFO: Successfully crawled page https://mta.ro/scoala-doctorala
+INFO: Successfully crawled page https://www.mta.ro/international/international-semester-ro/
+INFO: Successfully crawled page https://www.mta.ro/international/conferences-ro/
+INFO: Successfully crawled page https://mta.ro/declaratii-de-avere-si-de-interese
+INFO: Successfully crawled page https://mta.ro/departamentul-de-limbi-straine-stiinte-militare-si-management
+INFO: Successfully crawled page https://www.mta.ro/international/emilyo-ro/
+INFO: Successfully crawled page https://www.mta.ro/international/interuniversity-contact-ro/
+INFO: Successfully crawled page https://mta.ro/admitere
+INFO: Successfully crawled page https://mta.ro/facultatea-b
+ERROR: Response from site http://asatm.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/proiecte-finalizate
+INFO: Successfully crawled page https://downloads.wordpress.org/plugin/wordpress-seo.latest-stable.zip
+INFO: Successfully crawled page https://mta.ro/reviste-isi-romanesti
+ERROR: www.google.com
+ERROR: Response from site http://asatm.ro/ was 301
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+ERROR: Connection reset
+ERROR: Response from site http://jmiltechnol.mta.ro/ was 301
+INFO: Successfully crawled page https://mta.ro/international
+ERROR: Connection timed out: connect
+ERROR: www.facebook.com
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/structura-anilor-universitari
+ERROR: Connection reset
+INFO: Successfully crawled page https://mta.ro/prezentare
+ERROR: Connection timed out: connect
+ERROR: Connection timed out: connect
+ERROR: Connection timed out: connect
+INFO: Successfully crawled page https://www.mta.ro/international/erasmus-ro/
+INFO: Successfully crawled page https://mta.ro/facultatea-c
+INFO: Successfully crawled page https://mta.ro/stiri-anunturi/anunturi-mobilitati-erasmus

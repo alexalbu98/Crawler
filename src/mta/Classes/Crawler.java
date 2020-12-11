@@ -210,10 +210,11 @@ public class Crawler {
             Runnable task = null;
             if(visited.pageAlreadyVisited(page))
                 continue;
-
             if (option.equals("crawl")) {
+                //each site will have it`s own directory in the root directory
+                String directory = root_dir+"/"+page.getURL().getHost();
                 //starting depth is always 0
-                task = factory.makeCrawlTask(page, 0, depth, delay, log_file, root_dir, robots);
+                task = factory.makeCrawlTask(page, 0, depth, delay, log_level, log_file, directory, robots);
             }
             if (option.equals("sitemap")) {
                 task = factory.makeSitemapTask();
@@ -227,21 +228,22 @@ public class Crawler {
             if (option.equals("search")) {
                 task = factory.makeSearchWordsTask(searchWords,root_dir);
             }
-            if(task!=null){
-                pool.incrementActiveTasks();
-                pool.runTask(task);
-            }else
-                {
-                    System.out.println("Failed to create task for page " + page.getURL().toString());
-                }
+            if(task==null){
+                continue;
+            }
+            pool.incrementActiveTasks();
+            pool.runTask(task);
+
         }
+        System.out.println("Crawler is running...");
         //awaits all tasks to finish
         while (pool.getActiveTasks()!=0)
         {
-            Thread.sleep(10);
+            Thread.sleep(200);
         }
         pool.shutdownThreadPool();
         SearchWordsList map = SearchWordsList.getInstance();
         map.print();
+        System.out.println("Crawler finished");
     }
 }

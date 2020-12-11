@@ -1,7 +1,9 @@
 package mta.Classes;
 import mta.Exceptions.CouldNotReachSiteException;
+import mta.Singletons.LogFile;
 import mta.Singletons.ThreadPool;
 import mta.Singletons.VisitedPageList;
+import mta.Utilities.FileType;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -10,8 +12,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import static java.lang.Integer.parseInt;
+
 
 public class CrawlTask implements Runnable {
 
@@ -20,34 +22,34 @@ public class CrawlTask implements Runnable {
     private int maxDepth;
     private int delay;
     private boolean useRobots;
-    private String logFile;
     private String downloadDirectory;
     private ArrayList<String>disallowed;
     private ArrayList<String>allowed;
+    private LogFile logger;
 
     public CrawlTask(){}
-    public CrawlTask(Page page, int currentDepth, int maxDepth, int delay, String logFile, String rootDir, boolean useRobots)
+    public CrawlTask(Page page, int currentDepth, int maxDepth, int delay, int logLevel, String logFile, String rootDir, boolean useRobots)
     {
         this.currentPage = page;
         this.currentDepth = currentDepth;
         this.maxDepth = maxDepth;
-        this.logFile = logFile;
         this.downloadDirectory = rootDir;
         this.useRobots = useRobots;
         this.delay = delay;
         allowed = new ArrayList<>();
         disallowed = new ArrayList<>();
+        logger = LogFile.getInstance(logFile, logLevel);
     }
 
     /**
      * This method returns the page content
      * @returns a byte array with content or null in case of failure
      * */
-    private byte[] fetch() throws IOException {
+    private byte[] fetch() throws IOException, CouldNotReachSiteException {
             //checks first to see if the resource is allowed to be downloaded
             if(!resourceIsAllowed(currentPage.getURL().toString()))
             {
-                return null;
+                throw new CouldNotReachSiteException("Could not reach site: "+currentPage.getURL().toString());
             }
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             //Opening a connection
@@ -65,7 +67,7 @@ public class CrawlTask implements Runnable {
                 }
             }else
                 {
-                    return null;
+                   throw new CouldNotReachSiteException("Response from site " + currentPage.getURL().toString()+ " was " +response);
                 }
             return baos.toByteArray();
     }
@@ -82,20 +84,15 @@ public class CrawlTask implements Runnable {
         {
             filename = "mainPage";
         }
-        //every host will have it`s own folder in the root directory
-        String siteDirectory = downloadDirectory+"/"+host;
-        String fileLocation = siteDirectory+"/"+filename;
-        File dir = new File(siteDirectory);
-        //creates the site directory for the first time
-        if(!dir.exists()){
-            boolean success = dir.mkdirs();
-            if(!success)
-            {
-                System.out.println("Failed to save page " + currentPage.getURL().toString());
-                return;
-            }
+        String[]tokens = downloadDirectory.split("/");
+        //checks if the file belongs to the target site or not
+        if(!tokens[tokens.length - 1].equals(host)) {
+            downloadDirectory = downloadDirectory + "/" + host;
         }
-        dir = new File(fileLocation);
+        String fileLocation = downloadDirectory+"/"+filename+FileType.getFileExtension(new String(content));
+
+        //creates the site directory for the first file to be saved
+        File dir = new File(fileLocation);
         File parentDirs =  new File(dir.getParent());
         parentDirs.mkdirs();
         try {
@@ -104,14 +101,14 @@ public class CrawlTask implements Runnable {
             fos.close();
         }catch (Exception e)
         {
-            System.out.println("Failed to write content to file " + fileLocation);
+            logger.writToFile("Failed to save file " + fileLocation, "WARNING");
         }
     }
 
     /**
      * Method will return all links from content
      * @param content file content
-     * @returns array list of links
+     * @returns array list containing all the links on the page
      * */
     private ArrayList<Page>getLinks(String content) throws MalformedURLException {
         ArrayList<Page> linkList = new ArrayList<>();
@@ -130,13 +127,17 @@ public class CrawlTask implements Runnable {
     /**
      * This method reads the robots txt file from site
      * */
-    private void readRobotsTxt() throws MalformedURLException {
+    private void readRobotsTxt(){
+        if(!useRobots) //use robots must be specified by the user
+        {
+            return;
+        }
         String protocol = currentPage.getURL().getProtocol();
         String host = currentPage.getURL().getHost();
-        String link = protocol+"://"+host+"/"+"robots.txt";
+        String robotsTxtLink = protocol+"://"+host+"/"+"robots.txt";
         try
         {
-            URL url = new URL(link);
+            URL url = new URL(robotsTxtLink);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
             ArrayList<String>lines = new ArrayList<>();
             String line;
@@ -169,7 +170,8 @@ public class CrawlTask implements Runnable {
             }
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            allowed.clear();
+            disallowed.clear();
         }
     }
 
@@ -179,12 +181,22 @@ public class CrawlTask implements Runnable {
     private boolean resourceIsAllowed(String fileName)
     {
         boolean result = true;
-        for(String rule: disallowed) {
-            Pattern r = Pattern.compile(rule);
+        for(String disallowedRule: disallowed) {
+            Pattern r = Pattern.compile(disallowedRule);
             Matcher m = r.matcher(fileName);
-            if(m.find())
+            if(m.find()) //resource is not allowed
             {
                 result = false;
+                for(String allowedRule: allowed)
+                {
+                    r = Pattern.compile(allowedRule);
+                    m = r.matcher(fileName);
+                    if(m.find()) //resource is allowed
+                    {
+                        result = true;
+                        break;
+                    }
+                }
                 break;
             }
         }
@@ -197,46 +209,31 @@ public class CrawlTask implements Runnable {
         ThreadPool pool = ThreadPool.getInstance();
         try
         {
-            if(list.pageAlreadyVisited(currentPage)){
-                return;
-            }
-            if(currentDepth >= maxDepth)
-            {
-                return;
-            }
-
-            if(useRobots)
-            {
-                readRobotsTxt();
-            }
-
-            Thread.sleep(delay);
+            readRobotsTxt();
+            Thread.sleep(delay); //applies the delay specified by the user or in robots.txt
             byte[] content = fetch();
-            if(content == null)
-            {
-                throw new CouldNotReachSiteException("Could not reach site: "+currentPage.getURL().toString());
-            }
             writeToFile(content);
-            System.out.printf("Crawling page %s\n", currentPage.getURL().toString());
+            logger.writToFile("Successfully crawled page " + currentPage.getURL().toString(), "INFO");
             //adds current page to visited list
             list.addSites(currentPage);
             ArrayList<Page>links = getLinks(new String(content));
             //for each page the current page has a link to will be created a new task
             for(Page page: links) {
                 //the next page must not be visited
-                if(!list.pageAlreadyVisited(page)) {
-                    CrawlTask newTask = new CrawlTask(page, currentDepth + 1, maxDepth, delay, logFile, downloadDirectory, useRobots);
+                if(!list.pageAlreadyVisited(page) && (currentDepth+1<maxDepth)) {
+                    CrawlTask newTask = new CrawlTask(page, currentDepth + 1, maxDepth, delay, logger.getLogLevel(), logger.getFileName(), downloadDirectory, useRobots);
                     pool.incrementActiveTasks();
                     pool.runTask(newTask);
                 }
             }
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.writToFile(e.getMessage(), "ERROR");
         }finally {
             try {
                 pool.decrementActiveTasks();
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("Unexpected error");
+                pool.shutdownThreadPool();
                 System.exit(-1);
             }
         }

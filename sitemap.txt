@@ -1,0 +1,25 @@
+------------------------
+Site-ul google.ro contine urmatoarele fisiere:
+    -Folderul New_Folder care contine urmatoarele fisiere:
+        -Fisierul Buna.txt
+        -Fisierul Salut.txt
+    -Fisierul test.txt
+------------------------
+Site-ul mta.ro contine urmatoarele fisiere:
+    -Fisierul mta.html
+    -Folderul wp-content care contine urmatoarele fisiere:
+        -Folderul plugins care contine urmatoarele fisiere:
+            -Folderul bdthemes-element-pack-lite care contine urmatoarele fisiere:
+                -Folderul assets care contine urmatoarele fisiere:
+                    -Folderul css care contine urmatoarele fisiere:
+                        -Fisierul bdt-uikit.css
+                        -Fisierul element-pack-site.css
+        -Folderul testing care contine urmatoarele fisiere:
+            -Folderul another_test care contine urmatoarele fisiere:
+                -Fisierul file.txt
+                -Fisierul mure.txt
+        -Folderul themes care contine urmatoarele fisiere:
+            -Folderul HighendWP care contine urmatoarele fisiere:
+                -Fisierul styles.css
+        -Folderul uploads care contine urmatoarele fisiere:
+            -Fisierul Mihai-Togan_Lista-lucrari-min.pdf

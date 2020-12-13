@@ -223,7 +223,7 @@ public class Crawler {
                 task = factory.makeFilterTask();
             }
             if (option.equals("filer_size")) {
-                task = factory.makeLimitDimensionTask();
+                task = factory.makeLimitDimensionTask(root_dir);
             }
             if (option.equals("search")) {
                 task = factory.makeSearchWordsTask(searchWords,root_dir);

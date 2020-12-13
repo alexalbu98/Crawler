@@ -33,9 +33,9 @@ public class TaskFactory {
     {
         return new FilterTask();
     }
-    public Runnable makeLimitDimensionTask()
+    public Runnable makeLimitDimensionTask(String dir)
     {
-        return new LimitDimensionTask();
+        return new LimitDimensionTask(dir);
     }
     public Runnable makeSearchWordsTask(ArrayList<String> S, String path)
     {

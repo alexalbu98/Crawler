@@ -46,9 +46,11 @@ public class Crawler {
         delay = 5;
         robots = true;
         size = 0;
+        option="sitemap";
+        root_dir="C:\\Users\\TEO\\Desktop\\Cursuri\\Anul 4\\Ingineria Programarii\\Tema1\\Implementare\\Crawler\\Download";
         try {
-            checkArgs(args);
-            readConfigFile();
+            //checkArgs(args);
+            //readConfigFile();
             readSitesFile();
         }catch (Exception exception)
         {
@@ -217,7 +219,7 @@ public class Crawler {
                 task = factory.makeCrawlTask(page, 0, depth, delay, log_level, log_file, directory, robots);
             }
             if (option.equals("sitemap")) {
-                task = factory.makeSitemapTask();
+                factory.makeSitemapTask(root_dir,0);
             }
             if (option.equals("filter_type")) {
                 task = factory.makeFilterTask();
@@ -242,8 +244,10 @@ public class Crawler {
             Thread.sleep(200);
         }
         pool.shutdownThreadPool();
-        SearchWordsList map = SearchWordsList.getInstance();
-        map.print();
+        if (option.equals("search")) {
+            SearchWordsList map = SearchWordsList.getInstance();
+            map.print();
+        }
         System.out.println("Crawler finished");
     }
 }

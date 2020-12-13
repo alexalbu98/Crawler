@@ -1,5 +1,8 @@
 package mta.Singletons;
 import mta.Classes.*;
+
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
@@ -41,9 +44,10 @@ public class TaskFactory {
     {
         return new SearchWordsTask(S,path);
     }
-    public Runnable makeSitemapTask()
-    {
-        return new SitemapTask();
+    public void makeSitemapTask(String path,int level) throws FileNotFoundException, UnsupportedEncodingException {
+        SitemapTask task=new SitemapTask(path,level);
+        task.run(path,level);
+        task.close_writer();
     }
 
 }

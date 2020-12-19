@@ -1,6 +1,14 @@
 package mta.Classes;
 
+import mta.Singletons.AllowedFilesList;
+import java.io.*;
+import java.util.Scanner;
+
 public class FilterTask implements Runnable {
+   public FilterTask(String dir)
+    {
+        root_dir=dir;
+    }
     @Override
     public void run() 
     {
@@ -10,14 +18,14 @@ public class FilterTask implements Runnable {
         pathnames = f.list();
 
          for (String pathname : pathnames) {
-               if(AllowedFilesList.isTypeAllowed(pathname)==0)
+               if(allowed_files.isTypeAllowed(pathname)==0)
                   {
                     File filter = new File(pathname);
                     filter.delete();
-                    filter.close();
+
                   } 
           }
      }
-}
 
+}
 

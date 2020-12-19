@@ -9,13 +9,17 @@ import mta.Singletons.TaskFactory;
 import mta.Singletons.ThreadPool;
 import mta.Singletons.VisitedPageList;
 
+
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
+import java.net.URL;
+import java.net.MalformedURLException;
 
 
 
@@ -192,7 +196,23 @@ public class Crawler {
             }
         }
     }
-    private void readSitesFile(){
+    private void readSitesFile() throws FileNotFoundException, MalformedURLException {
+
+        File file= new File(site_file);
+        Scanner scnx = new Scanner(file);
+        int i = 0;
+
+
+        while(scnx.hasNextLine()){
+            String  url=scnx.nextLine();
+            URL myurl= new URL(url);
+            Page p = new Page();
+            p.addURL(myurl);
+
+            Pages.set(i, p);
+            i++;
+        }
+
 
     }
 
@@ -222,7 +242,7 @@ public class Crawler {
                 factory.makeSitemapTask(root_dir,0);
             }
             if (option.equals("filter_type")) {
-                task = factory.makeFilterTask();
+                task = factory.makeFilterTask(root_dir);
             }
             if (option.equals("filer_size")) {
                 task = factory.makeLimitDimensionTask(root_dir, size);

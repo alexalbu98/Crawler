@@ -17,16 +17,17 @@ public class AllowedFilesList {
         return instance;
     }
 
-   public boolean isTypeAllowed(String pathname)
+   public int isTypeAllowed(String pathname)
    {
+       int flag=0;
       for(String type : types)
         {
-          if(pathname.endsWith(type))
-           return true;
-          else 
-           return false;
+          if(pathname.endsWith(type)) {
+              flag = 1;
+              break;
+          }
        }
-    
+      return flag;
    }
 
    public boolean isFileAllowed(String file)

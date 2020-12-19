@@ -4,7 +4,10 @@ import mta.Singletons.AllowedFilesList;
 import java.io.*;
 import java.util.Scanner;
 
+
+
 public class FilterTask implements Runnable {
+    private String root_dir;
    public FilterTask(String dir)
     {
         root_dir=dir;

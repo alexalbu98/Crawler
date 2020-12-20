@@ -32,9 +32,9 @@ public class TaskFactory {
         return new CrawlTask(page, depth, maxDepth, delay, logLevel, logFile, rootDir, useRobots);
     }
 
-    public Runnable makeFilterTask(String dir)
+    public void makeFilterTask(String dir)
     {
-        return new FilterTask(dir);
+        FilterTask task=new FilterTask(dir);
     }
     public Runnable makeLimitDimensionTask(String dir)
     {

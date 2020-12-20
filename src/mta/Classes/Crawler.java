@@ -242,7 +242,7 @@ public class Crawler {
                 factory.makeSitemapTask(root_dir,0);
             }
             if (option.equals("filter_type")) {
-                task = factory.makeFilterTask(root_dir);
+                factory.makeFilterTask(root_dir);
             }
             if (option.equals("filer_size")) {
                 task = factory.makeLimitDimensionTask(root_dir);

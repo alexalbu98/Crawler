@@ -1,7 +1,7 @@
 # **Web Crawler Implementation**
   The project presented is an implementation in order to better understand the functiona Web Crawler must have. A Web Crawler is a bot useful for web indexing. It crawls one page at a time from a starting URL address, until all pages that derive from the URL address have been indexed or a certain depth for crawling was reached. 
   These resources can be stored locally (our instance) or in the Cloud, and the user will be notified when the Crawler has finished crawling and indexing the sites specified, afterwards being fitting for data analyzing methods:
-* data filtering by typeor size;
+* data filtering by type or size;
 * creating a sitemap;
 * searching using key-words.
 
@@ -15,22 +15,22 @@ crawl -s sites.txt [-conf config.txt]
 
   Create the sitemaps for the stored sites and outputting them to a file:
 ```
-sitemap [-conf config.txt]
+sitemap -s sites.txt [-conf config.txt]
 ```
 
   Filter the contents of the stored resources by type, and deleting the files that do not meet the criteria:
 ```
-filter_type [-conf config.txt]
+filter_type -s sites.txt [-conf config.txt]
 ```
 
   Filter the contents of the stored resources by size, and deleting the files that do not meet the criteria:
 ```
-filter_size [-conf config.txt]
+filter_size -s sites.txt [-conf config.txt]
 ```
 
   Search the contents of the stored resources by a series of key-words and outputting them to a file:
 ```
-search [-conf config.txt] <key_words>
+search -s sites.txt [-conf config.txt] -words <key_words>
 ```
 
 # **Documentation**
